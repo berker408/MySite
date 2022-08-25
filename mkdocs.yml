@@ -33,8 +33,8 @@ theme:
     repo: fontawesome/brands/github
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
 ## [top-right corner]
-repo_url: https://github.com/Yang-Xijie/yang-xijie.github.io # 右上角点击跳转的链接
-repo_name: yang-xijie.github.io # 右上角的名字
+repo_url: https://github.com/berker408 # 右上角点击跳转的链接
+repo_name: berker408.github.io # 右上角的名字
 ## [bottom-left corner]
 copyright: Copyright &copy; 2022 乔帆 # 左下角的版权声明
 ## [bottom-right corner]

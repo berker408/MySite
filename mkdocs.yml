@@ -52,7 +52,12 @@ nav:
   - 笔记: 
     - mac.md  
   - 个人信息:
-      - introduction.md
+    - introduction.md
+  - 生活:
+    - 猫咪:
+      - 猫咪手册.md
+    - 运动:
+      - 篮球基础.md
 
 # [Extensions]
 plugins:

@@ -1,0 +1,1902 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="乔帆的个人网站">
+      
+      
+        <meta name="author" content="乔帆">
+      
+      
+        <link rel="canonical" href="https://berker408.github.io/%E9%AB%98%E4%BB%A3%E6%80%BB%E7%BB%93%E7%AC%94%E8%AE%B0/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>高代总结笔记 - berker的个人网站</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.472b142f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.08040f6c.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../mkdocs/css/no-footer.css">
+    
+      <link rel="stylesheet" href="../mkdocs/css/unordered-list-symbols.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="berker的个人网站" class="md-header__button md-logo" aria-label="berker的个人网站" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            berker的个人网站
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              高代总结笔记
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange"  aria-label="切换至夜间模式"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="切换至夜间模式" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+            </label>
+          
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="orange"  aria-label="切换至日间模式"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="切换至日间模式" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/berker408" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    berker408.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../mac/" class="md-tabs__link md-tabs__link--active">
+        笔记
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../introduction/" class="md-tabs__link">
+        个人信息
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../%E7%8C%AB%E5%92%AA%E6%89%8B%E5%86%8C/" class="md-tabs__link">
+        生活
+      </a>
+    </li>
+  
+
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="berker的个人网站" class="md-nav__button md-logo" aria-label="berker的个人网站" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    berker的个人网站
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/berker408" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    berker408.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          笔记
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="笔记" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          笔记
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mac/" class="md-nav__link">
+        Mac 学习笔记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%8B%B1%E8%AF%AD%E5%85%AD%E7%BA%A7/" class="md-nav__link">
+        英语六级
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%94%B5%E8%B7%AF/" class="md-nav__link">
+        电路
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          高代总结笔记
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        高代总结笔记
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    一.线性方程组的解
+  </a>
+  
+    <nav class="md-nav" aria-label="一.线性方程组的解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    线性方程组的角度
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    矩阵的角度
+  </a>
+  
+    <nav class="md-nav" aria-label="矩阵的角度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    行阶梯型矩阵
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    行最简形矩阵
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    线性方程组的解
+  </a>
+  
+    <nav class="md-nav" aria-label="线性方程组的解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    无解(不相容的)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    无穷多解
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    唯一解
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    判据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    齐次方程组的特殊性
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    数环和数域
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    二.向量空间(2个运算,八大性质)
+  </a>
+  
+    <nav class="md-nav" aria-label="二.向量空间(2个运算,八大性质)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1.线性组合和线性相关性
+  </a>
+  
+    <nav class="md-nav" aria-label="1.线性组合和线性相关性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    向量的线性运算
+  </a>
+  
+    <nav class="md-nav" aria-label="向量的线性运算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    线性组合
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    线性表示的判定
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    线性相关
+  </a>
+  
+    <nav class="md-nav" aria-label="线性相关">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    定义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    线性无关
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    判定
+  </a>
+  
+    <nav class="md-nav" aria-label="判定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    一个有关唯一线性表出的定理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    关于伸长组和缩短组的定理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    关于添加组(扩充组)和部分组的定理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    2.向量组的秩和极大无关组
+  </a>
+  
+    <nav class="md-nav" aria-label="2.向量组的秩和极大无关组">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    评述:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    基本定义
+  </a>
+  
+    <nav class="md-nav" aria-label="基本定义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-" class="md-nav__link">
+    定义1-线性相关
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-" class="md-nav__link">
+    定义2-线性表示
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    极大无关组的性质
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    求极大无关组
+  </a>
+  
+    <nav class="md-nav" aria-label="求极大无关组">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    利用初等行变换
+  </a>
+  
+    <nav class="md-nav" aria-label="利用初等行变换">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    依据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    流程
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    向量组的等价,及其与秩的关系
+  </a>
+  
+    <nav class="md-nav" aria-label="向量组的等价,及其与秩的关系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    向量组的等价
+  </a>
+  
+    <nav class="md-nav" aria-label="向量组的等价">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    等价的三个性质:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    定理1:向量组与它的任意一个极大线性无关组等价
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2t_1t_2t_1t_1t_2" class="md-nav__link">
+    定理2:若\(T_1可由T_2线性表示,且T_1线性无关,则T_1的向量个数≤T_2的向量个数\)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3.向量空间的基
+  </a>
+  
+    <nav class="md-nav" aria-label="3.向量空间的基">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    补充--关于矩阵形式乘法的几种视角()
+  </a>
+  
+    <nav class="md-nav" aria-label="补充--关于矩阵形式乘法的几种视角()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    1). 矩阵右乘以列向量:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    2.  矩阵左乘以行向量:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    3). 矩阵乘矩阵:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    向量空间的定义
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          个人信息
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="个人信息" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          个人信息
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        感谢任总对本项目的大力支持
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          生活
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="生活" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          生活
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" checked>
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_1">
+          猫咪
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="猫咪" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          猫咪
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%8C%AB%E5%92%AA%E6%89%8B%E5%86%8C/" class="md-nav__link">
+        猫咪饲养手册
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          运动
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="运动" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          运动
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AF%AE%E7%90%83%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        篮球基础
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" checked>
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3">
+          摄影
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="摄影" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          摄影
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../iPhone%E7%9B%B8%E6%9C%BA%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" class="md-nav__link">
+        iphone相机使用说明
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    一.线性方程组的解
+  </a>
+  
+    <nav class="md-nav" aria-label="一.线性方程组的解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    线性方程组的角度
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    矩阵的角度
+  </a>
+  
+    <nav class="md-nav" aria-label="矩阵的角度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    行阶梯型矩阵
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    行最简形矩阵
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    线性方程组的解
+  </a>
+  
+    <nav class="md-nav" aria-label="线性方程组的解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    无解(不相容的)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    无穷多解
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    唯一解
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    判据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    齐次方程组的特殊性
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    数环和数域
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    二.向量空间(2个运算,八大性质)
+  </a>
+  
+    <nav class="md-nav" aria-label="二.向量空间(2个运算,八大性质)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1.线性组合和线性相关性
+  </a>
+  
+    <nav class="md-nav" aria-label="1.线性组合和线性相关性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    向量的线性运算
+  </a>
+  
+    <nav class="md-nav" aria-label="向量的线性运算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    线性组合
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    线性表示的判定
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    线性相关
+  </a>
+  
+    <nav class="md-nav" aria-label="线性相关">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    定义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    线性无关
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    判定
+  </a>
+  
+    <nav class="md-nav" aria-label="判定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    一个有关唯一线性表出的定理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    关于伸长组和缩短组的定理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    关于添加组(扩充组)和部分组的定理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    2.向量组的秩和极大无关组
+  </a>
+  
+    <nav class="md-nav" aria-label="2.向量组的秩和极大无关组">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    评述:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    基本定义
+  </a>
+  
+    <nav class="md-nav" aria-label="基本定义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-" class="md-nav__link">
+    定义1-线性相关
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-" class="md-nav__link">
+    定义2-线性表示
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    极大无关组的性质
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    求极大无关组
+  </a>
+  
+    <nav class="md-nav" aria-label="求极大无关组">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    利用初等行变换
+  </a>
+  
+    <nav class="md-nav" aria-label="利用初等行变换">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    依据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    流程
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    向量组的等价,及其与秩的关系
+  </a>
+  
+    <nav class="md-nav" aria-label="向量组的等价,及其与秩的关系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    向量组的等价
+  </a>
+  
+    <nav class="md-nav" aria-label="向量组的等价">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    等价的三个性质:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    定理1:向量组与它的任意一个极大线性无关组等价
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2t_1t_2t_1t_1t_2" class="md-nav__link">
+    定理2:若\(T_1可由T_2线性表示,且T_1线性无关,则T_1的向量个数≤T_2的向量个数\)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3.向量空间的基
+  </a>
+  
+    <nav class="md-nav" aria-label="3.向量空间的基">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    补充--关于矩阵形式乘法的几种视角()
+  </a>
+  
+    <nav class="md-nav" aria-label="补充--关于矩阵形式乘法的几种视角()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    1). 矩阵右乘以列向量:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    2.  矩阵左乘以行向量:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    3). 矩阵乘矩阵:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    向量空间的定义
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+  <a href="https://github.com/berker408/edit/main/docs/高代总结笔记.md" title="编辑此页" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<div class="toc">
+<ul>
+<li><a href="#_1">高代总结笔记</a><ul>
+<li><a href="#_2">一.线性方程组的解</a><ul>
+<li><a href="#_3">线性方程组的角度</a></li>
+<li><a href="#_4">矩阵的角度</a><ul>
+<li><a href="#_5">行阶梯型矩阵</a></li>
+<li><a href="#_6">行最简形矩阵</a></li>
+</ul>
+</li>
+<li><a href="#_7">线性方程组的解</a><ul>
+<li><a href="#_8">无解(不相容的)</a></li>
+<li><a href="#_9">无穷多解</a></li>
+<li><a href="#_10">唯一解</a></li>
+<li><a href="#_11">判据</a></li>
+<li><a href="#_12">齐次方程组的特殊性</a></li>
+</ul>
+</li>
+<li><a href="#_13">数环和数域</a></li>
+</ul>
+</li>
+<li><a href="#2">二.向量空间(2个运算,八大性质)</a><ul>
+<li><a href="#1">1.线性组合和线性相关性</a><ul>
+<li><a href="#_14">向量的线性运算</a><ul>
+<li><a href="#_15">线性组合</a></li>
+<li><a href="#_16">线性表示的判定</a></li>
+</ul>
+</li>
+<li><a href="#_17">线性相关</a><ul>
+<li><a href="#_18">定义</a></li>
+<li><a href="#_19">线性无关</a></li>
+<li><a href="#_20">判定</a><ul>
+<li><a href="#_21">一个有关唯一线性表出的定理</a></li>
+<li><a href="#_22">关于伸长组和缩短组的定理</a></li>
+<li><a href="#_23">关于添加组(扩充组)和部分组的定理</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#2_1">2.向量组的秩和极大无关组</a><ul>
+<li><a href="#_24">评述:</a></li>
+<li><a href="#_25">基本定义</a><ul>
+<li><a href="#1-">定义1-线性相关</a></li>
+<li><a href="#2-">定义2-线性表示</a></li>
+<li><a href="#_26">极大无关组的性质</a></li>
+</ul>
+</li>
+<li><a href="#_27">求极大无关组</a><ul>
+<li><a href="#_28">利用初等行变换</a><ul>
+<li><a href="#_29">依据</a></li>
+<li><a href="#_30">流程</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_31">向量组的等价,及其与秩的关系</a><ul>
+<li><a href="#_32">向量组的等价</a><ul>
+<li><a href="#_33">等价的三个性质:</a></li>
+</ul>
+</li>
+<li><a href="#1_1">定理1:向量组与它的任意一个极大线性无关组等价</a></li>
+<li><a href="#2t_1t_2t_1t_1t_2">定理2:若\(T_1可由T_2线性表示,且T_1线性无关,则T_1的向量个数≤T_2的向量个数\)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#3">3.向量空间的基</a><ul>
+<li><a href="#-">补充--关于矩阵形式乘法的几种视角()</a><ul>
+<li><a href="#1_2">1). 矩阵右乘以列向量:</a></li>
+<li><a href="#2_2">2.  矩阵左乘以行向量:</a></li>
+<li><a href="#3_1">3). 矩阵乘矩阵:</a></li>
+</ul>
+</li>
+<li><a href="#_34">向量空间的定义</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 id="_1">高代总结笔记<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">一.线性方程组的解<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h5 id="_3">线性方程组的角度<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h5>
+<p>回归到基础,就是线性方程组的三个同解变形</p>
+<p>1.___</p>
+<p>2.___</p>
+<p>3.___</p>
+<p>利用该同解变形,将方程组化成阶梯型</p>
+<h5 id="_4">矩阵的角度<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h5>
+<p>增广矩阵对应于线性方程组</p>
+<p>矩阵的初等行变换(得到行等价) == 线性方程组的三个同解变形(得到同解方程组)</p>
+<h6 id="_5">行阶梯型矩阵<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h6>
+<p>1.非零行在零行之上</p>
+<p>2.<u>处于下方的主元</u>必在上方的主元的<strong>右侧(严格)</strong></p>
+<h6 id="_6">行最简形矩阵<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h6>
+<p>定理:每一个矩阵都行等价于一个唯一的行最简形矩阵(可以仅通过第三个初等行变换化得)</p>
+<p>因为,行最简形矩阵其实已经相当于解,一个矩阵(线性方程组)自然只有一个解集</p>
+<h5 id="_7">线性方程组的解<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h5>
+<h6 id="_8">无解(不相容的)<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h6>
+<p>增广矩阵的阶梯形出现了0=a的形式</p>
+<p>==注意==:即使系数矩阵的列秩序为满秩,增广矩阵的列秩也可能+1</p>
+<h6 id="_9">无穷多解<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h6>
+<p>阶梯形的主元个数(非零行个数)小于变元个数</p>
+<h6 id="_10">唯一解<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h6>
+<p>阶梯形的主元个数等于变元个数</p>
+<h6 id="_11">判据<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h6>
+<p>化为阶梯形来看</p>
+<h6 id="_12">齐次方程组的特殊性<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h6>
+<p>必有零解</p>
+<h3 id="_13">数环和数域<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p>数环:对加,减,乘封闭</p>
+<p>数域:对加,减,乘,除(除数不为0)封闭</p>
+<p>都必须包含0,毕竟可以减自己</p>
+<h2 id="2">二.向量空间(2个运算,八大性质)<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="1">1.线性组合和线性相关性<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<h5 id="_14">向量的线性运算<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h5>
+<p>两个运算,八个性质</p>
+<h6 id="_15">线性组合<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h6>
+<p>数域中的一组数作为系数乘到向量组的向量上,加起来</p>
+<h6 id="_16">线性表示的判定<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h6>
+<p>一个向量可由一个向量组线性表出 == 以这个向量组为<u>列向量</u>的系数矩阵,需表示向量为增广列,的这样一个线性方程组问题</p>
+<p>特殊,零向量可以由任何向量线性表出</p>
+<p>评述:线性表出是重要的基础概念,线性相关,无关组,向量组的秩等都需要使用</p>
+<h4 id="_17">线性相关<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h4>
+<h5 id="_18">定义<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h5>
+<p>紧扣定义</p>
+<p>1:向量组有系数不全为0的线性组合,使其等于0</p>
+<p>2:存在一个向量能被其他向量线性表出</p>
+<p>3:<strong>对应的齐次线性方程组有非零解--</strong></p>
+<h5 id="_19">线性无关<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h5>
+<p>1:仅有系数全为零的线性组合,使其等于0</p>
+<p>2:无向量可被其余向量线性表出</p>
+<p>3:对应的齐次线性方程组只有零解--</p>
+<h5 id="_20">判定<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h5>
+<ol>
+<li>对应到系数矩阵</li>
+</ol>
+<p>对应的齐次线性方程组有无非零解问题,(则由此导出,向量的维数大于向量个数,一定线性相关)</p>
+<p>也即把系数矩阵化成阶梯形</p>
+<p>适用于比较具体的数值运算情形</p>
+<ol>
+<li>运用另外两个定义</li>
+</ol>
+<p>适用于较为抽象的证明等</p>
+<h6 id="_21">一个有关唯一线性表出的定理<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h6>
+<p>若向量组已经线性无关,再加入一个向量使其线性相关,则该向量可由<strong>原向量组</strong>唯一线性表出</p>
+<h6 id="_22">关于伸长组和缩短组的定理<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h6>
+<p>一个向量组线性无关,则他的伸长组线性无关</p>
+<p>一个向量组线性相关,则他的缩短组线性相关</p>
+<p>定理可以有一些妙用,比如先判断一个向量组缩短组线性无关,则原向量组一定线性无关</p>
+<h6 id="_23">关于添加组(扩充组)和部分组的定理<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h6>
+<p>一个向量组线性无关,则他的部分组一定线性无关</p>
+<p>一个向量组线性相关,则他的扩充组一定线性相关</p>
+<h3 id="2_1">2.向量组的秩和极大无关组<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
+<h6 id="_24">评述:<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h6>
+<p>秩是一个非常深刻的概念,极大无关组是一个好用的(证明)概念</p>
+<h4 id="_25">基本定义<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h4>
+<h5 id="1-">定义1-线性相关<a class="headerlink" href="#1-" title="Permanent link">&para;</a></h5>
+<p>向量组Ｔ满足</p>
+<ol>
+<li>
+<p>Ｔ中存在ｒ(r≥1)个向量线性无关</p>
+</li>
+<li>
+<p>T中任意r+1个向量（若有）都线性无关</p>
+</li>
+</ol>
+<p>则称那r个线性无关的向量是T的一个极大线性无关组，称r为向量组的秩，记为<span class="arithmatex">\(R(T)\)</span></p>
+<h5 id="2-">定义2-线性表示<a class="headerlink" href="#2-" title="Permanent link">&para;</a></h5>
+<p>把2条件改为,T中任意向量可由极大无关组线性表示</p>
+<h5 id="_26">极大无关组的性质<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h5>
+<ul>
+<li>一个规定:向量组只包含0向量时,规定其秩为0</li>
+<li>向量组的极大无关组可能不只一个,但当向量组本身线性无关时只有一个</li>
+<li>向量组的<strong>秩</strong>唯一</li>
+<li>向量组的秩≤向量组中向量的维数</li>
+</ul>
+<h4 id="_27">求极大无关组<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h4>
+<h5 id="_28">利用初等行变换<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h5>
+<h6 id="_29">依据<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h6>
+<p>由于系数矩阵的初等行变换(是同解变形),所以不改变列向量组的线性相关性</p>
+<h6 id="_30">流程<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h6>
+<p>写成列向量形式-&gt;初等行变换化为阶梯形-&gt;<strong>行阶梯形的主元个数即为向量组T的秩(矩阵的秩),主元所在列所对应的T中的向量即可构成一个极大无关组</strong></p>
+<h4 id="_31">向量组的等价,及其与秩的关系<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h4>
+<h5 id="_32">向量组的等价<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h5>
+<p>向量组之间的线性表出:<span class="arithmatex">\(T_1可由T_2线性表出,即T_1中所有向量可由T_2中的向量线性表出\)</span></p>
+<p>定义:若两向量组可相互线性表出,即为等价</p>
+<h6 id="_33">等价的三个性质:<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h6>
+<ol>
+<li>反身性:与自己等价</li>
+<li>对称性:<span class="arithmatex">\(T_2与T_1等价,则T_1与T_2等价\)</span></li>
+<li>传递性</li>
+</ol>
+<h5 id="1_1">定理1:向量组与它的任意一个极大线性无关组等价<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h5>
+<ol>
+<li>
+<p>T的每一个向量可由极大无关组唯一线性表出,得到T的内在结构</p>
+</li>
+<li>
+<p>表明T的极大无关组之间彼此等价,是基变换的基础</p>
+</li>
+</ol>
+<h5 id="2t_1t_2t_1t_1t_2">定理2:若<span class="arithmatex">\(T_1可由T_2线性表示,且T_1线性无关,则T_1的向量个数≤T_2的向量个数\)</span><a class="headerlink" href="#2t_1t_2t_1t_1t_2" title="Permanent link">&para;</a></h5>
+<p>逆否命题:<span class="arithmatex">\(多由少表示,多的必然线性相关\)</span></p>
+<p>推论1:<span class="arithmatex">\(若T_1可由T_2线性表示, 则T_1秩≤T_2秩\)</span></p>
+<p>推论2:等价的向量组,秩相等(必要条件)</p>
+<h3 id="3">3.向量空间的基<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<h4 id="-">补充--关于矩阵形式乘法的几种视角()<a class="headerlink" href="#-" title="Permanent link">&para;</a></h4>
+<h5 id="1_2">1). 矩阵右乘以列向量:<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h5>
+<p>结果仍然是一个列向量</p>
+<p>两种视角:</p>
+<ul>
+<li>列向量的每一个元作为系数乘以矩阵的对应列,然后再线性组合</li>
+<li>普通视角:对应行乘以列,得到结果对应处的元</li>
+</ul>
+<h5 id="2_2">2.  矩阵左乘以行向量:<a class="headerlink" href="#2_2" title="Permanent link">&para;</a></h5>
+<p>结果任然是一个行向量</p>
+<p>两种视角:</p>
+<ul>
+<li>行向量的每一个元作为系数乘以矩阵对应行,然后再线性组合</li>
+<li>普通视角:行向量乘以对应列向量,得到结果对应处的元</li>
+</ul>
+<h5 id="3_1">3). 矩阵乘矩阵:<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h5>
+<p>结果仍然是矩阵,其实是上面两种方式的组合,所以有三种视角,此处不一一列举</p>
+<h4 id="_34">向量空间的定义<a class="headerlink" href="#_34" title="Permanent link">&para;</a></h4>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            回到页面顶部
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="页脚" >
+      
+        
+        <a href="../%E7%94%B5%E8%B7%AF/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 电路" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              电路
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../introduction/" class="md-footer__link md-footer__link--next" aria-label="下一页: 感谢任总对本项目的大力支持" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              感谢任总对本项目的大力支持
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022 乔帆
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="https://space.bilibili.com/34064954?spm_id_from=333.1007.0.0" target="_blank" rel="noopener" title="Bilibili | 帅气的帆帆" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M488.6 104.1c16.7 18.1 24.4 39.7 23.3 65.7v202.4c-.4 26.4-9.2 48.1-26.5 65.1-17.2 17-39.1 25.9-65.5 26.7H92.02c-26.45-.8-48.21-9.8-65.28-27.2C9.682 419.4.767 396.5 0 368.2V169.8c.767-26 9.682-47.6 26.74-65.7C43.81 87.75 65.57 78.77 92.02 78h29.38L96.05 52.19c-5.75-5.73-8.63-13-8.63-21.79 0-8.8 2.88-16.06 8.63-21.797C101.8 2.868 109.1 0 117.9 0s16.1 2.868 21.9 8.603L213.1 78h88l74.5-69.397C381.7 2.868 389.2 0 398 0c8.8 0 16.1 2.868 21.9 8.603 5.7 5.737 8.6 12.997 8.6 21.797 0 8.79-2.9 16.06-8.6 21.79L394.6 78h29.3c26.4.77 48 9.75 64.7 26.1zm-38.8 69.7c-.4-9.6-3.7-17.4-10.7-23.5-5.2-6.1-14-9.4-22.7-9.8H96.05c-9.59.4-17.45 3.7-23.58 9.8-6.14 6.1-9.4 13.9-9.78 23.5v194.4c0 9.2 3.26 17 9.78 23.5s14.38 9.8 23.58 9.8H416.4c9.2 0 17-3.3 23.3-9.8 6.3-6.5 9.7-14.3 10.1-23.5V173.8zm-264.3 42.7c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.2 6.3-14 9.5-23.6 9.5-9.6 0-17.5-3.2-23.6-9.5-6.1-6.3-9.4-14-9.8-23.2v-33.3c.4-9.1 3.8-16.9 10.1-23.2 6.3-6.3 13.2-9.6 23.3-10 9.2.4 17 3.7 23.3 10zm191.5 0c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.1 6.3-14 9.5-23.6 9.5-9.6 0-17.4-3.2-23.6-9.5-7-6.3-9.4-14-9.7-23.2v-33.3c.3-9.1 3.7-16.9 10-23.2 6.3-6.3 14.1-9.6 23.3-10 9.2.4 17 3.7 23.3 10z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://github.com/berker408" target="_blank" rel="noopener" title="GitHub | berker408" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.top", "navigation.indexes", "navigation.expand", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      
+        <script src="../mkdocs/javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
